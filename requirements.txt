@@ -1,0 +1,9 @@
+Flask
+gunicorn
+Werkzeug
+tensorflow==2.15.0
+numpy
+pillow
+pandas
+scikit-learn
+openpyxl
