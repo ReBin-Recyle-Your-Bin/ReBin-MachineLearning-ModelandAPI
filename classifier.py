@@ -10,7 +10,7 @@ from flask import Flask, request, jsonify
 MY_MODEL = 'modelDenseNet121.h5'
 model_detec = tf.keras.models.load_model(MY_MODEL)
 # Label kategori sampah yang dapat diprediksi
-class_name = [
+kelas = [
     "Ban",
     "Botol Plastik",
     "Bungkus Plastik",
@@ -22,8 +22,20 @@ class_name = [
     "Kertas",
     "Sampah Organik"
 ]
+class_name = [
+    "Tire",
+    "Plastic Bottles",
+    "Plastic Packaging Waste",
+    "Cups",
+    "Gallon",
+    "Glass",
+    "Can",
+    "Cardboard",
+    "Paper",
+    "Organic Waste"
+]
 # Function to predict trash categories from images
-def model_predict(img):
+def model_predict_EN(img):
     # Preprocessing the image and resizing it to 224x224
     i = np.asarray(img.resize((224, 224))) / 255.0
     i = i.reshape(1, 224, 224, 3)
@@ -31,6 +43,19 @@ def model_predict(img):
     predict_class = model_detec.predict(i)
     # Get the waste category label with the highest probability value
     class_result = class_name[np.argmax(predict_class)]
+    # Calculates prediction accuracy in percentage
+    accuracy_result = np.max(predict_class) * 100
+    return class_result, accuracy_result
+
+# Function to predict trash categories from images
+def model_predict_ID(img):
+    # Preprocessing the image and resizing it to 224x224
+    i = np.asarray(img.resize((224, 224))) / 255.0
+    i = i.reshape(1, 224, 224, 3)
+    # Make predictions using models
+    predict_class = model_detec.predict(i)
+    # Get the waste category label with the highest probability value
+    class_result = kelas[np.argmax(predict_class)]
     # Calculates prediction accuracy in percentage
     accuracy_result = np.max(predict_class) * 100
     return class_result, accuracy_result

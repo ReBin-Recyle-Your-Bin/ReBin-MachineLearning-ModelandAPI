@@ -7,13 +7,20 @@ from sklearn.metrics.pairwise import cosine_similarity
 dataset_recycling = None
 
 def load_dataset():
-  dataset_recycling = pd.read_excel('./dataset_recommendation_indo.xlsx')
+  dataset_recycling = pd.read_excel('./dataset_recommendation.xlsx')
   return dataset_recycling
 
 
 def preprocessing_data(text):
-    text = text.lower()  # Convert text to lowercase
-    text = re.sub(r'\d|\W|_', ' ', text)  # Correcting the regex pattern
+    # Convert text to lowercase
+    text = text.lower()
+    # Remove numbers
+    text = re.sub(r'\d+', '', text)
+    # Remove non-alphanumeric characters and underscores
+    text = re.sub(r'\W|_', ' ', text)
+    text = re.sub(r'\n', ' ', text)
+    # Remove extra whitespaces
+    text = re.sub(r'\s+', ' ', text).strip()  # Correcting the regex pattern
     return text
 
 def get_recommendation(keyword):
@@ -22,8 +29,11 @@ def get_recommendation(keyword):
     if dataset_recycling is None:
         dataset_recycling = load_dataset()
 
+    dataset_recycling['combined_text'] = dataset_recycling['ingredients'] + ' ' + dataset_recycling['name']
+
+
     vectorizer = TfidfVectorizer(preprocessor=preprocessing_data)
-    recycling_matrix = vectorizer.fit_transform(dataset_recycling['ingredients'])
+    recycling_matrix = vectorizer.fit_transform(dataset_recycling['combined_text'])
 
     recycling_matrix.astype(np.float32)
 
