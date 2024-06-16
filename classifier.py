@@ -9,7 +9,7 @@ from flask import Flask, request, jsonify
 # Load Model Image Classification
 MY_MODEL = 'modelDenseNet121.h5'
 model_detec = tf.keras.models.load_model(MY_MODEL)
-# Label kategori sampah yang dapat diprediksi
+# Label or class name
 kelas = [
     "Ban",
     "Botol Plastik",

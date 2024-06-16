@@ -29,8 +29,8 @@ def predict_ID():
         
         return jsonify({
             "label": pred_label,
-            "akurasi": f"{pred_accuracy:.2f}%",
-            "rekomendasi": recommendation_result
+            "accuracy": f"{pred_accuracy:.2f}%",
+            "recommendation": recommendation_result
         }), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
