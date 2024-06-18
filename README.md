@@ -21,23 +21,30 @@ and create a content-based recommendation system using TF-IDF and cosine similar
 - PIL
 
 ### Dataset
-- [Dataset](https://drive.google.com/drive/folders/1R5KiMunBInm5kznj8nmTd9YJwDePGQrp?usp=sharing)
+[Dataset](https://drive.google.com/drive/folders/1R5KiMunBInm5kznj8nmTd9YJwDePGQrp?usp=sharing)
 ### Splitting Dataset
 [Splitting Code]([splitting.ipynb])
 - Train : 80%
+  ![Sample Image](Images/train dataset.png)
 - Validation : 20%
+  ![Sample Image](Images/val dataset.png)
 ### Building Model
-We use Transfer Learning Model DenseNet121 
+We use Transfer Learning Model DenseNet121 <br>
 [Modeling Code]([WasteClassification_DenseNet121.ipynb])
 ### Training Result
-Model reach 96% validation accuracy and 0.14 validation loss
-### Classification Test
+Model reach 96% validation accuracy and 0.14 validation loss <br>
+![Sample Image](Images/accuracy.png) ![Sample Image](Images/loss.png)
+### Prediction Test
+![Sample Image](Images/classification test.png)
 ### Testing Result
 We test H5 Model using dataset testing with 1031 images. 
 - Classification Report
+  ![Sample Image](Images/classification report.png)
 - Confusion Matrix
+  ![Sample Image](Images/confusion matrix.png)
 - Testing Accuracy
-  Model reach 92% Testing accuracy
+  Model reach 92% Testing accuracy <br>
+  ![Sample Image](Images/test acc.png)
   
 
 ## Recomendation System Model
@@ -50,7 +57,8 @@ We test H5 Model using dataset testing with 1031 images.
 ### Dataset
 - [Dataset](https://github.com/ReBin-Recyle-Your-Bin/ReBin-MachineLearning-ModelandAPI/blob/master/dataset_recommendation.xlsx)
 ### Workflow
-#### Content-Based Filtering Recycle Recomendation Model ([recycleRecomendation.py])
+#### Content-Based Filtering Recycle Recomendation Model ([recycleRecomendation.py]) 
+![Sample Image](Images/recomendation.png)
 1. Load Dataset
    First, you need to load the dataset (dataset_recommendation.xlsx) using the load_dataset() function from the pandas library. This function reads the Excel file and stores it in a pandas DataFrame.
 2. Preprocessing Data
