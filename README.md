@@ -91,3 +91,34 @@ We tested the H5 Model using a dataset of 1031 images.
    - Formats recommendations into a list of dictionaries (`recycling_cleaned`) with details like name, ingredients, and cosine similarity.
 
 ## API Machine Learning for Deployment
+
+We use the Flask framework to build an API for image classification and recycling recommendation system.
+
+### How to Use
+
+#### In Local Deployment:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/ReBin-Recyle-Your-Bin/ReBin-MachineLearning-ModelandAPI.git
+   cd ReBin-MachineLearning-ModelandAPI
+
+2. Set Up Environment:
+   - Create a virtual environment (optional but recommended):
+     ```bash
+     python -m venv env
+
+     - Activate the virtual environment:
+         - On Windows:
+           ```bash
+           .\env\Scripts\activate
+         - macOS and Linux:
+           ```bash
+           source env/bin/activate
+     - Install Dependencies:
+     ```bash
+     pip install -r requirements.txt
+     - Run the Flask Application
+     ```bash
+     python app.py
+
