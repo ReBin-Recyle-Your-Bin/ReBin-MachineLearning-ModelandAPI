@@ -67,7 +67,7 @@ We tested the H5 Model using a dataset of 1031 images.
 
 ### Workflow
 
-#### Content-Based Filtering Recycle Recommendation Model ([recycleRecommendation.py]) 
+#### Content-Based Filtering [Recycle Recommendation Model](recycleRecommendation.py) 
 ![Recommendation Workflow](Images/recomendation.png)
 
 1. **Load Dataset:**
