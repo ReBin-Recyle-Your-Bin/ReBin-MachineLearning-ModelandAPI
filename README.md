@@ -108,17 +108,17 @@ We use the Flask framework to build an API for image classification and recyclin
      ```bash
      python -m venv env
 
-     - Activate the virtual environment:
+    - Activate the virtual environment:
          - On Windows:
            ```bash
            .\env\Scripts\activate
          - macOS and Linux:
            ```bash
            source env/bin/activate
-     - Install Dependencies:
-     ```bash
-     pip install -r requirements.txt
-     - Run the Flask Application
-     ```bash
-     python app.py
+    - Install Dependencies:
+       ```bash
+       pip install -r requirements.txt
+    - Run the Flask Application
+       ```bash
+       python app.py
 
