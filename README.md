@@ -120,5 +120,5 @@ We use the Flask framework to build an API for image classification and recyclin
        pip install -r requirements.txt
     - Run the Flask Application
        ```bash
-       python app.py
+       python main.py
 
