@@ -30,9 +30,9 @@ Build waste classification models using TensorFlow with DenseNet121 for 10 types
 ### Splitting Dataset
 [Splitting Code](splitting.ipynb)
 - Train: 80%
-  ![Train Dataset](Images/train_dataset.png)
+  ![Train Dataset](Images/train dataset.png)
 - Validation: 20%
-  ![Validation Dataset](Images/val_dataset.png)
+  ![Validation Dataset](Images/val dataset.png)
 
 ### Building Model
 We use Transfer Learning Model DenseNet121.
@@ -43,16 +43,16 @@ The model achieved 96% validation accuracy and 0.14 validation loss.
 ![Validation Accuracy](Images/accuracy.png) ![Validation Loss](Images/loss.png)
 
 ### Prediction Test
-![Classification Test](Images/classification_test.png)
+![Classification Test](Images/classification test.png)
 
 ### Testing Result
 We tested the H5 Model using a dataset of 1031 images.
 - Classification Report
-  ![Classification Report](Images/classification_report.png)
+  ![Classification Report](Images/classification report.png)
 - Confusion Matrix
-  ![Confusion Matrix](Images/confusion_matrix.png)
+  ![Confusion Matrix](Images/confusion matrix.png)
 - Testing Accuracy: The model achieved 92% testing accuracy.
-  ![Testing Accuracy](Images/test_acc.png)
+  ![Testing Accuracy](Images/test acc.png)
 
 ## Recommendation System Model
 
@@ -64,7 +64,7 @@ We tested the H5 Model using a dataset of 1031 images.
 - Scikit-learn (TfidfVectorizer and cosine_similarity)
 
 ### Dataset:
-- [Dataset Link](https://github.com/ReBin-Recyle-Your-Bin/ReBin-MachineLearning-ModelandAPI/blob/master/dataset_recommendation.xlsx)
+[Dataset Link](https://github.com/ReBin-Recyle-Your-Bin/ReBin-MachineLearning-ModelandAPI/blob/master/dataset_recommendation.xlsx)
 
 ### Workflow
 
