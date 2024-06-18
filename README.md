@@ -29,17 +29,17 @@ Build waste classification models using TensorFlow with DenseNet121 for 10 types
 
 ### Splitting Dataset
 [Splitting Code](splitting.ipynb)
-- Train: 80%
+- Train: 80% <br>
   ![Train Dataset](Images/train_dataset.png)
-- Validation: 20%
+- Validation: 20% <br>
   ![Validation Dataset](Images/val_dataset.png)
 
 ### Building Model
-We use Transfer Learning Model DenseNet121.
+We use Transfer Learning Model DenseNet121. <br>
 [Modeling Code](WasteClassification_DenseNet121.ipynb)
 
 ### Training Result
-The model achieved 96% validation accuracy and 0.14 validation loss.
+The model achieved 96% validation accuracy and 0.14 validation loss. <br>
 ![Validation Accuracy](Images/accuracy.png) ![Validation Loss](Images/loss.png)
 
 ### Prediction Test
@@ -47,11 +47,11 @@ The model achieved 96% validation accuracy and 0.14 validation loss.
 
 ### Testing Result
 We tested the H5 Model using a dataset of 1031 images.
-- Classification Report
+- Classification Report <br>
   ![Classification Report](Images/classification_report.png)
-- Confusion Matrix
+- Confusion Matrix <br>
   ![Confusion Matrix](Images/confusion_matrix.png)
-- Testing Accuracy: The model achieved 92% testing accuracy.
+- Testing Accuracy: The model achieved 92% testing accuracy. <br>
   ![Testing Accuracy](Images/test_acc.png)
 
 ## Recommendation System Model
