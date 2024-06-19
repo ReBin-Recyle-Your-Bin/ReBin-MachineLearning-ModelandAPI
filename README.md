@@ -97,6 +97,8 @@ We use the Flask framework to build an API for image classification and recyclin
 - POST /ID/predict : Submit a request to make a prediction using a machine learning model (Output: Indonesian).
 - POST /EN/predict : Submit a request to make a prediction using a machine learning model (Output: English).
 
+### Deployment Link
+https://rebin-ml-kbd6pi6apq-et.a.run.app
 ### How to Use
 
 #### In Local Deployment:
