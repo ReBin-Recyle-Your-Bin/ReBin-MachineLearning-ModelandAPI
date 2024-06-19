@@ -93,6 +93,10 @@ We tested the H5 Model using a dataset of 1031 images.
 
 We use the Flask framework to build an API for image classification and recycling recommendation system.
 
+### Endpoints
+- POST /ID/predict : Submit a request to make a prediction using a machine learning model (Output: Indonesian).
+- POST /ED/predict : Submit a request to make a prediction using a machine learning model (Output: English).
+
 ### How to Use
 
 #### In Local Deployment:
