@@ -100,9 +100,6 @@ We use the Flask framework to build an API for image classification and recyclin
 
 ### How to Use
 
-#### Deployment Link
-https://rebin-ml-kbd6pi6apq-et.a.run.app
-
 #### In Local Deployment:
 
 1. **Clone the Repository:**
