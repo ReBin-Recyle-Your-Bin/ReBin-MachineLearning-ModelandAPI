@@ -122,10 +122,10 @@ https://rebin-ml-kbd6pi6apq-et.a.run.app
          - macOS and Linux:
            ```bash
            source env/bin/activate
-    - Install Dependencies:
+  3. Install Dependencies:
        ```bash
-       pip install -r requirements.txt
-    - Run the Flask Application
+        pip install -r requirements.txt
+  4. Run the Flask Application
        ```bash
        python main.py
 
