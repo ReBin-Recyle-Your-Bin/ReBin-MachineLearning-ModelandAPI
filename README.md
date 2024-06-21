@@ -1,4 +1,4 @@
-# 🌱 REBIN MACHINE LEARNING PROJECT
+# 🪴🗑 REBIN MACHINE LEARNING PROJECT
 
 ## About the Project
 
