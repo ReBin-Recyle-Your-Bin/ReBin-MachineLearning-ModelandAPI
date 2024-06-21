@@ -1,8 +1,8 @@
 # 🪴🗑 REBIN MACHINE LEARNING PROJECT
 
-##📚 About the Project
+## 📚 About the Project
 
-###👥 Machine Learning Team Members:
+### 👥 Machine Learning Team Members:
 1. M124D4KX1516 – Kartika Deviani – Politeknik Harapan Bersama
 2. M232D4KY2952 – Patrick Ulysses – Universitas Katolik Parahyangan
 3. M232D4KX2774 – Sherrine Tania – Universitas Katolik Parahyangan
